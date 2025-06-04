@@ -1,0 +1,7 @@
+#!/bin/false
+# shellcheck shell=sh source=../main.sh
+FALLBACK_LOCALE="ru_RU.UTF-8"
+LC_MESSAGES="${LC_MESSAGES:-${FALLBACK_LOCALE}}"
+[ ! -f "$PATH_LOCALES/$LC_MESSAGES" ] && LC_MESSAGES="${FALLBACK_LOCALE}"
+.      "$PATH_LOCALES/$FALLBACK_LOCALE"
+.      "$PATH_LOCALES/$LC_MESSAGES"
