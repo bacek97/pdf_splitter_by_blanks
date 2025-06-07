@@ -15,7 +15,14 @@ set_template() {
 }
 
 is_reversed() {
-  zenity --question --title="$MSG_INLINE_PLS_REVERSE_TITLE" --ok-label="$MSG_INLINE_PLS_REVERSE_OK" --cancel-label="$MSG_INLINE_PLS_REVERSE_CANCEL" --text="$MSG_INLINE_PLS_REVERSE_TEXT"
+  # local napges_odd="$1"
+  zenity --question --title="$1 $MSG_INLINE_PLS_REVERSE_TITLE" --ok-label="$MSG_INLINE_PLS_REVERSE_OK" --cancel-label="$MSG_INLINE_PLS_REVERSE_CANCEL" --text="$MSG_INLINE_PLS_REVERSE_TEXT"
 }
 
+count_pages_check_equal() {
+  # local napges_odd="$1"
+  # local napges_even="$2"
+  [ "$1" -ne "$2" ] && 
+    zenity --question --title="$1 != $2" --ok-label="$1 != $2" --cancel-label="X" --text="OK"
+}
 

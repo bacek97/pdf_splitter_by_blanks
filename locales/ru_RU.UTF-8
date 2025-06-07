@@ -9,8 +9,8 @@ NPAGES="неизвестно"
 FILENAME_TMP_PAGE="проверяемая_страница.pdf"
 
 FILENAME_TMP_PAGE="проверяемая_страница.pdf"
-FILENAME_EVEN="лицевые_из_стопки.pdf"
-FILENAME_ODD="оборотные_из_стопки.pdf"
+FILENAME_ODD="лицевые_из_стопки.pdf"
+FILENAME_EVEN="оборотные_из_стопки.pdf"
 FILENAME_COLLATE="стопка.pdf"
 
 export MSG_INLINE_TITLE_INIT="Двустороннее сканирование пачки документов"
@@ -33,3 +33,4 @@ MSG_PIPE_PLS_REVERSE_TITLE="Переверните стопку в сканер�
 MSG_PIPE_COLLATING="Объединение сторон в один документ"
 MSG_PIPE_ANALYZE="%d\n# %d%% %d/%dстр. PDF: %s\n"
 MSG_PIPE_CALC_NPAGES="Вычилсение количества страниц"
+
